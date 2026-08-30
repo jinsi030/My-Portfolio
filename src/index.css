@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #FBF7F5;
+    --text-ink: #21151F;
+    --text-muted: #756A70;
+    --accent-plum: #351C35;
+    --accent-pink: #E9C8CF;
+    --pink-secondary: #F4DDE1;
+    --accent-rose: #B96F7D;
+    --border-subtle: #DCCDD1;
+  }
+
+  body {
+    background-color: #FBF7F5;
+    color: #21151F;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial {
+  font-family: 'Newsreader', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-display-serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-expressive {
+  font-family: 'Cormorant Garamond', 'Instrument Serif', Georgia, serif;
+}
+
+.font-technical {
+  font-family: 'Space Grotesk', ui-monospace, monospace;
+}
+
+/* 3D Card Stack Perspective */
+.perspective-deck {
+  perspective: 1600px;
+  transform-style: preserve-3d;
+}
+
+/* Custom Cursor support */
+.cursor-view {
+  cursor: none;
+}
+
+/* Subtle engineering graph grid */
+.bg-engineering-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(220, 205, 209, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(220, 205, 209, 0.35) 1px, transparent 1px);
+}
+
+.bg-dot-grid {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(117, 106, 112, 0.25) 1px, transparent 1px);
+}
+
+/* Custom scrollbar for preview elements */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCCDD1;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B96F7D;
+}
+
