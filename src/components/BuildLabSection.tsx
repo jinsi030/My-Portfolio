@@ -109,44 +109,44 @@ export const BuildLabSection: React.FC<{ onSelectProject: (project: Project) => 
                   exit={{ opacity: 0 }}
                   className="space-y-4"
                 >
-                  {/* KhanDrishti Telemetry Sandbox */}
+                  {/* KhanDrishti Mission Control Dashboard */}
                   {currentProject.id === 'khandrishti' && (
                     <div className="p-5 rounded-xl bg-[#21151F] text-white border border-[#351C35] space-y-4">
                       <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 border-b border-white/10 pb-3">
                         <div className="flex items-center gap-2">
-                          <Radio className={`w-3.5 h-3.5 ${sensorStatus.faultActive ? 'text-rose-400 animate-ping' : 'text-emerald-400'}`} />
+                          <Radio className={`w-3.5 h-3.5 ${sensorStatus.faultActive ? 'text-rose-400 animate-pulse' : 'text-emerald-400'}`} />
                           <span className="text-xs font-technical uppercase tracking-wider">
-                            SPATIAL TELEMETRY FEED // MINE SECTOR 04
+                            HIGH-DENSITY MISSION CONTROL // GEOSPATIAL SECTOR 04
                           </span>
                         </div>
                         <button
                           onClick={() => setSensorStatus(prev => ({ ...prev, faultActive: !prev.faultActive, pressure: prev.faultActive ? 4.82 : 8.94 }))}
                           className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-technical cursor-pointer border border-white/20"
                         >
-                          {sensorStatus.faultActive ? 'Reset Nominal Baseline' : 'Simulate Pressure Spike'}
+                          {sensorStatus.faultActive ? 'Reset Baseline View' : 'Trigger Hazard Alert State'}
                         </button>
                       </div>
 
-                      {/* Live Telemetry Matrix */}
+                      {/* Live Ergonomic UI Metric Matrix */}
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 font-technical">
                         <div className="p-3.5 rounded-lg bg-black/40 border border-white/10 space-y-1">
-                          <div className="text-[11px] text-neutral-400">HYDRAULIC PRESSURE</div>
+                          <div className="text-[11px] text-neutral-400">ENVIRONMENTAL LOAD</div>
                           <div className={`text-xl font-bold ${sensorStatus.faultActive ? 'text-rose-400' : 'text-emerald-400'}`}>
-                            {sensorStatus.pressure} Bar
+                            {sensorStatus.faultActive ? 'HIGH STRESS' : 'OPTIMAL'}
                           </div>
-                          <div className="text-[10px] text-neutral-400">Nominal: 4.5 – 5.2 Bar</div>
+                          <div className="text-[10px] text-neutral-400">Adaptive threshold grouping</div>
                         </div>
 
                         <div className="p-3.5 rounded-lg bg-black/40 border border-white/10 space-y-1">
-                          <div className="text-[11px] text-neutral-400">SEISMIC VIBRATION</div>
-                          <div className="text-xl font-bold text-white">0.14 mm/s</div>
-                          <div className="text-[10px] text-neutral-400">Threshold: &lt; 0.8 mm/s</div>
+                          <div className="text-[11px] text-neutral-400">OPERATOR SCAN SPEED</div>
+                          <div className="text-xl font-bold text-white">4.1s Avg</div>
+                          <div className="text-[10px] text-neutral-400">62% faster than legacy</div>
                         </div>
 
                         <div className="p-3.5 rounded-lg bg-black/40 border border-white/10 space-y-1">
                           <div className="text-[11px] text-neutral-400">STATUS TRIAGE</div>
                           <div className={`text-xs font-bold uppercase ${sensorStatus.faultActive ? 'text-rose-400' : 'text-emerald-400'}`}>
-                            {sensorStatus.faultActive ? 'ANOMALY ALERT' : 'NOMINAL'}
+                            {sensorStatus.faultActive ? 'ANOMALY DETECTED' : 'NOMINAL MONITORING'}
                           </div>
                           <div className="text-[10px] text-neutral-400">High-contrast readability</div>
                         </div>

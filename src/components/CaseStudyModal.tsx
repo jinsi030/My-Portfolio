@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronDown, ChevronUp, ArrowLeft, Sliders, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Project } from '../types';
 import { BeforeAfterSlider } from './BeforeAfterSlider';
-import { InteractiveAppSimulator } from './InteractiveAppSimulator';
 
 interface CaseStudyModalProps {
   project: Project | null;
@@ -216,13 +215,6 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                     {stage.number === '05' && (
                       <div className="pt-4 border-t border-[#DCCDD1]/70">
                         <BeforeAfterSlider projectName={project.title} />
-                      </div>
-                    )}
-
-                    {/* STAGE 06 SPECIAL: Interactive Prototype Flow Simulator */}
-                    {stage.number === '06' && project.id === 'smartaahaar' && (
-                      <div className="pt-4 border-t border-[#DCCDD1]/70">
-                        <InteractiveAppSimulator />
                       </div>
                     )}
                   </div>
