@@ -51,7 +51,7 @@ export const RESUME_DATA = {
   secondaryTitle: 'AI Product Designer & Design Technologist',
   location: 'Ahmedabad, 380007, India',
   phone: '+91 93272 02902',
-  email: 'jvjinu50@gmail.com',
+  email: 'virvadiyajinsi7@gmail.com',
   linkedin: 'https://linkedin.com/in/jinsivirvadiya',
   linkedinDisplay: 'Jinsi Virvadiya',
   github: 'https://github.com/jinisi030',
