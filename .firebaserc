@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "my-portfolio-15469"
+  },
+  "targets": {
+    "my-portfolio-15469": {
+      "hosting": {
+        "portfolio": [
+          "jinsivirvadiya-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
