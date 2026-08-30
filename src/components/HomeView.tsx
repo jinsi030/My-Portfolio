@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowDown, ArrowUpRight, Sparkles, Layers, Sliders, CheckCircle } from 'lucide-react';
-import { HeroArtisticDesk } from './HeroArtisticDesk';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { TextScramble } from './TextScramble';
 import { WhatIDoTiles } from './WhatIDoTiles';
 import { WorkStackedDeck } from './WorkStackedDeck';
@@ -101,15 +100,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </MagneticButton>
             </motion.div>
           </div>
-
-          {/* Hero Artistic Desk Digital Composition */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.7 }}
-          >
-            <HeroArtisticDesk />
-          </motion.div>
         </div>
       </section>
 
